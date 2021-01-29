@@ -4,6 +4,13 @@ import { Link } from 'react-router-dom';
 import { PoliticaContainer } from './styles'
 
 const PoliticaDePrivacidade = () => {
+
+    React.useEffect(() => {
+        return () => {
+          window.scrollTo(0, 0);
+        }
+      }, []);
+
     return (
         <PoliticaContainer>
             <div className="container">

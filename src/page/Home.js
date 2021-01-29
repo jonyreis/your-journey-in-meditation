@@ -11,6 +11,11 @@ import Garantia from '../component/Garantia'
 import Footer from '../component/Footer'
 
 const Home = () => {
+    React.useEffect(() => {
+        return () => {
+          window.scrollTo(0, 0);
+        }
+      }, []);
     return (
         <>
             <Intro />
