@@ -1,15 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import { FooterContainer } from './styles';
 
 const Footer = () => {
     return (
-        <footer style={{ 
-            background: '#000', 
-            color: '#fff', 
-            padding: '20px 0', 
-            textAlign: 'center'
-            }}>
-            <p>Copyright 2020 - Sua Jornanda na Meditação - Todos os Direitos Reservados</p>
-        </footer>
+        <FooterContainer>
+            <div className="footer-left">
+                <p>Copyright 2020 - Sua Jornanda na Meditação </p>
+                <p>Todos os Direitos Reservados</p>
+            </div>
+            <div>
+                <Link to="/politica-privacidade">Política de Privacidade</Link>
+            </div>
+        </FooterContainer>
     )
 }
 
