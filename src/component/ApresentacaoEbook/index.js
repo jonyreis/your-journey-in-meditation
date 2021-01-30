@@ -15,7 +15,7 @@ const ApresentacaoEbook = () => {
                     <div className="conteudo-1">
                         <h2>Tenha hoje seu ebook <span>Sua Jonanda na Meditação</span> e comece a experimentar os <span>benefícios da meditação</span> de uma forma simples e descomplicada</h2>
                         <img src={Combo3d} alt="Foto do Ebook" />
-                        <a href="https://monetizze.com.br/"><span>Clique Aqui</span> e adquira o seu!</a>
+                        <a href="https://monetizze.com.br/"><button type="button"><span>Clique Aqui</span> e adquira o seu E-book!</button></a>
                     </div>
                 </div>
             </div>

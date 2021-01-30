@@ -10,6 +10,14 @@ export const BrindeContainer = styled.div`
             max-width: 960px;
             padding: 32px 0;
             margin: 0 auto;
+            @media (max-width: 600px) {
+                font-size: 32px;
+                padding: 40px 20px;
+            }
+            @media (max-width: 420px) {
+                font-size: 28px;
+                padding: 40px 10px;
+            }
         }
     }
     .descricao-foto {
@@ -18,13 +26,35 @@ export const BrindeContainer = styled.div`
         align-items: flex-start;
         max-width: 960px;
         margin: 3rem auto;
+        @media (max-width: 970px) {
+            padding: 0 20px;
+        }
+        @media (max-width: 420px) {
+            padding: 0 10px;
+        }
+        @media (max-width: 840px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         div {
             color: #333;
             font-size: 24px;
             margin-top: 2rem;
             h2 {
                 margin-bottom: 1rem;
+                @media (max-width: 420px) {
+                    font-size: 24px;
+                }
             }
+            p {
+                @media (max-width: 420px) {
+                    font-size: 20px;
+                }
+            }
+        }
+        img {
+            max-width: 100%;
         }
     }
 `;

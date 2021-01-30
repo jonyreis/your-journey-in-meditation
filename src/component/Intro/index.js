@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react';
+
+// import Audio from '../../assets/audio.mp3';
 
 import MulherMeditando from '../../assets/mulher-meditando.jpg';
 import Buda1 from '../../assets/buda-1.svg';
@@ -9,7 +12,13 @@ const Intro = () => {
     return (
         <IntroContainer>
             <div className="container">
-                <h1>Inicie a sua jornada na meditação e tenha uma vida de <span>Prosperidade, Abundância e Paz</span>.</h1>            
+            {/* <audio id="player" preload="auto" loop="loop" controls="controls" type="">
+                <source src={Audio} type="audio/mp3" />
+                </audio> */}
+                {/* <audio id="player" autoplay loop controls>
+                    <source src={Audio} type="audio/mp3" />
+                </audio> */}
+                <h1>Inicie a sua jornada na meditação e tenha uma vida de <span>Prosperidade, Abundância e Paz</span>.</h1>
                 <div className="foto-beneficios">
                     <img src={MulherMeditando} alt="Mulher Meditando" />
                     <div className="beneficios">
@@ -19,10 +28,10 @@ const Intro = () => {
                                 <img src={Buda1} alt="imagem de buda"/>
                                 <span>redução de estresses;</span>
                             </li>
-                            <li>
+                            {/* <li>
                                 <img src={Buda1} alt="imagem de buda"/>
                                 <span>insônia;</span>
-                            </li>
+                            </li> */}
                             <li>
                                 <img src={Buda1} alt="imagem de buda"/>
                                 <span>controle da ansiedade;</span>
@@ -43,7 +52,8 @@ const Intro = () => {
                     </div>
                 </div>
                 <h3>Venha aprender a Meditar de forma simples e fácil!</h3>
-                <button type="button"><span>Clique aqui</span> e adquire seu Livro Online Sua Jornada na Meditação</button>
+                <button type="button" className="button-large"><span>Clique aqui</span> e adquira seu E-book Sua Jornada na Meditação</button>
+                <button type="button" className="button-small"><span>Clique aqui</span> e adquira seu E-book</button>
             </div>
         </IntroContainer>
     )

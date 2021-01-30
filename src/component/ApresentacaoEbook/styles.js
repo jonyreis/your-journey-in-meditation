@@ -9,15 +9,23 @@ export const ApresentacaoEbookContainer = styled.div`
     .container-1 {
         background: linear-gradient(75.12deg, #671EAA 11.69%, rgba(169, 64, 238, 0.83) 106.88%);
         width: 100%;
-        min-height: 108vh;
         max-height: 108vh;
-        padding: 50px;
+        padding: 40px;
+        @media (max-width: 600px) {
+            padding: 40px 20px;
+        }
+        @media (max-width: 500px) {
+            padding: 40px 10px;
+        }
         .conteudo-1 {
             text-align: center;
             h2 {
                 color: ${colors.white};
                 font-size: 27px;
                 font-weight: 700;
+                @media (max-width: 600px) {
+                    font-size: 24px;
+                }
                 span {
                     color: ${colors.yellow};
                 }
@@ -25,18 +33,24 @@ export const ApresentacaoEbookContainer = styled.div`
             img {
                 display: block;
                 margin: 0 auto 3rem;
+                @media (max-width: 900px) {
+                    max-width: 100%;
+                    margin: 2rem auto 3rem;
+                }
             }
-            a {
+            button {
                 background-color: ${colors.orange};
                 border: none;
                 color: ${colors.white};
                 font-size: 24px;
                 font-weight: 700;
                 text-decoration: none;
-                width: 100%;
+                max-width: 100%;
                 padding: 8px 32px;
                 outline: none;
                 cursor: pointer;
+                @media (max-width: 500px) {
+                }
                 span {
                     text-decoration: underline;
                 }
@@ -52,9 +66,11 @@ export const ApresentacaoEbookContainer = styled.div`
     .container-2 {
         background: ${colors.white};
         width: 100%;
-        min-height: 108vh;
         max-height: 108vh;
         padding: 40px;
+        @media (max-width: 700px) {
+            min-height: 1060px;
+        }
         .conteudo-2 {
             color: #333;
             text-align: center;
@@ -67,12 +83,32 @@ export const ApresentacaoEbookContainer = styled.div`
                 span {
                     color: ${colors.yellow};
                 }
+                @media (max-width: 700px) {
+                    font-size: 32px;
+                }
+                @media (max-width: 500px) {
+                    font-size: 26px;
+                }
             }
             .capa-aprender {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 margin: 3rem 0;
+                @media (max-width: 700px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
                 img {
+                    @media (max-width: 900px) {
+                        max-width: 100%;
+                    }
+                    @media (max-width: 700px) {
+                        max-width: 400px;
+                    }
+                    @media (max-width: 500px) {
+                        max-width: 100%;
+                    }
                 }
                 div {
                     margin-top: 3rem;

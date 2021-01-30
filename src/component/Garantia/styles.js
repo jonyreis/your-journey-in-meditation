@@ -5,21 +5,33 @@ export const GarantiaContainer = styled.div`
     background: linear-gradient(75.12deg, #671EAA 11.69%, rgba(169, 64, 238, 0.83) 106.88%);
     display: block;
     text-align: center;
-    
+
     width: 100%;
     padding: 16px 0 32px;
+    @media (max-width: 970px) {
+        padding: 40px 20px;
+    }
     .grid-garantia {
         display: grid;
         grid-template-columns: 4fr 7fr;
         max-width: 920px;
         margin: 0 auto;
         padding: 32px 0;
+        @media (max-width: 680px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         img {
             margin-top: 10px;
         }
         div {
             margin-top: 80px;
             color: #fff;
+            @media (max-width: 680px) {
+                max-width: 540px;
+                margin-top: 40px;
+            }
             h3 {
                 font-size: 24px;
                 text-align: left;
@@ -34,6 +46,10 @@ export const GarantiaContainer = styled.div`
         }
     }
     a {
+        text-decoration: none;
+        margin: 30px auto 0;
+    }
+    button {
         background-color: ${colors.orange};
         border: none;
         color: ${colors.white};
@@ -44,9 +60,11 @@ export const GarantiaContainer = styled.div`
 
         max-width: 910px;
         padding: 8px 32px;
-        margin: 30px auto 0;
         outline: none;
         cursor: pointer;
+        @media (max-width: 420px) {
+            font-size: 18px;
+        }
         span {
             text-decoration: underline;
         }

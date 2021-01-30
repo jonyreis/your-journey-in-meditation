@@ -13,20 +13,28 @@ export const InfosContainer = styled.div`
             max-width: 930px;
             margin: 0 auto;
             padding: 32px 0;
+            @media (max-width: 970px) {
+                padding: 40px 20px;
+            }
         }
     }
     .container {
         max-width: 960px;
         margin: 0 auto;
+        @media (max-width: 970px) {
+            padding: 0 20px;
+        }
         img {
             display: block;
             margin: 80px auto 36px;
+            max-width: 100%;
         }
         p {
             font-size: 20px;
             font-weight: 26px;
             text-align: center;
             margin-bottom: 80px;
+
         }
     }
 `

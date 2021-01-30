@@ -4,9 +4,16 @@ import { colors } from '../../styles/globalStyles';
 export const IntroContainer = styled.main`
     background: linear-gradient(75.12deg, #671EAA 11.69%, rgba(169, 64, 238, 0.83) 106.88%);
     width: 100%;
-    min-height: 108vh;
+    min-height: 800px;
     max-height: 108vh;
     padding: 40px;
+    @media (max-width: 930px) {
+        min-height: 1060px;
+    }
+    @media (max-width: 710px) {
+        min-height: 1120px;
+        padding: 40px 10px;
+    }
     .container {
         max-width: 960px;
         margin: 0 auto;
@@ -24,7 +31,10 @@ export const IntroContainer = styled.main`
         @media (max-width: 930px) {
             font-size: 32px;
             line-height: 36px;
-            max-width: 700px;    
+            max-width: 700px;
+        }
+        @media (max-width: 420px) {
+            font-size: 28px;
         }
     }
     .foto-beneficios {
@@ -35,6 +45,9 @@ export const IntroContainer = styled.main`
         margin: 48px auto 2rem;
         img {
             max-width: 460px;
+            @media (max-width: 600px) {
+                max-width: 100%;
+            }
         }
         @media (max-width: 930px) {
             display: flex;
@@ -43,7 +56,11 @@ export const IntroContainer = styled.main`
     }
     .beneficios {
         color: ${colors.white};
-
+        h2 {
+            @media (max-width: 600px) {
+                font-size: 20px;
+            }
+        }
         li {
             display: flex;
             align-items: center;
@@ -59,6 +76,17 @@ export const IntroContainer = styled.main`
         font-size: 24px;
         text-align: center;
     }
+    .button-small {
+        display: none;
+        @media (max-width: 420px) {
+            display: block;
+        }
+    }
+    .button-large {
+        @media (max-width: 420px) {
+            display: none;
+        }
+    }
     button {
         background-color: ${colors.orange};
         border: none;
@@ -71,6 +99,7 @@ export const IntroContainer = styled.main`
         /* bottom: 20px; */
         padding: 8px 32px;
         margin: 3rem auto 0;
+        word-wrap: break-word;
         outline: none;
         cursor: pointer;
         span {

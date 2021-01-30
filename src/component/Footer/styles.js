@@ -8,7 +8,12 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-around;
 
-  padding: 24px 0;
+  padding: 24px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+  }
   .footer-left {
     text-align: center;
   }
