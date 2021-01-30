@@ -52,8 +52,8 @@ const Intro = () => {
                     </div>
                 </div>
                 <h3>Venha aprender a Meditar de forma simples e fácil!</h3>
-                <button type="button" className="button-large"><span>Clique aqui</span> e adquira seu E-book Sua Jornada na Meditação</button>
-                <button type="button" className="button-small"><span>Clique aqui</span> e adquira seu E-book</button>
+                <button type="button" className="button-large"><span>Clique aqui</span> e adquira o seu E-book Sua Jornada na Meditação</button>
+                <button type="button" className="button-small"><span>Clique aqui</span> e adquira o seu E-book</button>
             </div>
         </IntroContainer>
     )

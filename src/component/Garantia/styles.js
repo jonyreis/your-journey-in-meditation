@@ -46,8 +46,8 @@ export const GarantiaContainer = styled.div`
         }
     }
     a {
+        text-align: center;
         text-decoration: none;
-        margin: 30px auto 0;
     }
     button {
         background-color: ${colors.orange};
@@ -58,7 +58,8 @@ export const GarantiaContainer = styled.div`
         text-decoration: none;
         display: block;
 
-        max-width: 910px;
+        max-width: 100%;
+        margin: 0 auto;
         padding: 8px 32px;
         outline: none;
         cursor: pointer;
