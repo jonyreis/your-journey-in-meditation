@@ -15,8 +15,10 @@ export const MelhoraContainer = styled.div`
         }
     }
     .melhorias {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
         gap: 20px;
         margin: 80px auto 120px;
         @media (max-width: 960px) {
@@ -27,6 +29,7 @@ export const MelhoraContainer = styled.div`
         }
         div {
             text-align: center;
+            max-width: 300px;
             @media (max-width: 760px) {
                 max-width: 460px;
                 margin: 16px auto;

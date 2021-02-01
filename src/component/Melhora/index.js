@@ -3,6 +3,7 @@ import React from 'react'
 import TrabalhoMelhor from '../../assets/trabalho-melhor.png';
 import RelacionamentosMelhor from '../../assets/relacionamentos-melhor.png';
 import VidaMelhor from '../../assets/vida-melhor.png';
+import CriancaMeditando from '../../assets/crianca-meditando.png';
 
 
 import { MelhoraContainer } from './styles'
@@ -26,6 +27,11 @@ const Melhora = () => {
                     <img src={VidaMelhor} alt="Imagem de mulher feliz"/>
                     <h3>Melhora a nossa qualidade de vida</h3>
                     <p>Lhe traz uma sensação profunda de saúde e bem-estar e se, praticado frequentemente o corpo, a mente e o espírito se beneficiam imensamente.</p>
+                </div>
+                <div>
+                    <img src={CriancaMeditando} alt="Imagem de criança meditando"/>
+                    <h3>Melhora a concentração, auxiliando no processo de aprendizagem</h3>
+                    <p>Crianças que são ensinadas desde cedo a meditar costumam ter mais facilidade com o processo de aprendizagem. Isso porque os exercícios de meditação ajudam a melhorar o foco e a concentração - assim, fica mais fácil estudar e absorver novos conhecimentos.</p>
                 </div>
             </div>
         </MelhoraContainer>
