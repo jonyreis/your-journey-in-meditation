@@ -14,10 +14,10 @@ const Contato = () => {
         e.preventDefault()// Prevents default refresh by the browser
         emailjs.sendForm('gmail', apiKeys.TEMPLATE_ID, e.target, apiKeys.USER_ID)
         .then(result => {
-            alert('Message Sent, I\'ll get back to you shortly', result.text);
+            alert('Mensagem enviada, entraremos em contato em breve!', result.text);
         },
         error => {
-            alert( 'An error occured, Plese try again',error.text)
+            alert( 'Ocorreu um erro. Por favor, tente novamente!',error.text)
         })
     }
     return (

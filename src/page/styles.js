@@ -71,6 +71,7 @@ export const ContatoContainer = styled.div`
         font-weight: 700;
         text-align: left;
         padding: 16px 32px;
+        cursor: pointer;
         @media (max-width: 420px) {
           width: 100%;
           text-align: center;
