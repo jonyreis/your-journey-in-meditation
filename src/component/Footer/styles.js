@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
-  background-color: #000;
+  background-color: #111;
   color: #fff;
   font-size: 14px;
 
   display: flex;
+  align-items: center;
   justify-content: space-around;
 
-  padding: 24px;
+  padding: 40px 0;
   @media (max-width: 500px) {
     flex-direction: column;
     align-items: center;
@@ -16,6 +17,12 @@ export const FooterContainer = styled.footer`
   }
   .footer-left {
     text-align: center;
+  }
+  .links {
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   a {
     color: #fff;

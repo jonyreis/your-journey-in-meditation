@@ -7,11 +7,12 @@ const Footer = () => {
     return (
         <FooterContainer>
             <div className="footer-left">
-                <p>Copyright 2020 - Sua Jornanda na Meditação </p>
+                <p>Copyright 2020 - Equipe Sua Jornanda na Meditação </p>
                 <p>Todos os Direitos Reservados</p>
             </div>
-            <div>
+            <div className="links">
                 <Link to="/politica-privacidade">Política de Privacidade</Link>
+                <Link to="/contato">Contato</Link>
             </div>
         </FooterContainer>
     )
