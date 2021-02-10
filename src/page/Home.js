@@ -3,6 +3,7 @@ import React from 'react';
 import Intro from '../component/Intro';
 import Infos1 from '../component/Infos1';
 import Infos2 from '../component/Infos2';
+import Midia from '../component/Midia'
 import Melhora from '../component/Melhora';
 import ApresentacaoEbook from '../component/ApresentacaoEbook'
 import Brinde from '../component/Brinde'
@@ -21,6 +22,7 @@ const Home = () => {
             <Intro />
             <Infos1 />
             <Infos2 />
+            <Midia />
             <Melhora />
             <ApresentacaoEbook />
             <Brinde />
