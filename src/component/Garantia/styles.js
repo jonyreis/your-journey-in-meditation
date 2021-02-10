@@ -66,6 +66,10 @@ export const GarantiaContainer = styled.div`
         @media (max-width: 420px) {
             font-size: 18px;
         }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
         span {
             text-decoration: underline;
         }

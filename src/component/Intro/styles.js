@@ -102,6 +102,10 @@ export const IntroContainer = styled.main`
         word-wrap: break-word;
         outline: none;
         cursor: pointer;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
         span {
             text-decoration: underline;
         }

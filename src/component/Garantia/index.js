@@ -14,9 +14,9 @@ const index = () => {
                     <p>Se no período de 07 dias, por qualquer motivo, você não estiver satisfeito com o Ebook -  Sua Jornada na Meditação, basta você nos enviar 1 único e-mail através do nosso suporte e nós devolvemos todo o seu dinheiro imediatamente!</p>
                 </div>
             </div>
-            <a href="https://monetizze.com.br/" rel="noreferrer" >
-                <button><span>Clique Aqui</span> para adquirir agora o E-book Sua Jornada na Meditação + Bônus</button>
-            </a>
+            <button>
+                <a href="https://app.monetizze.com.br/checkout/PFH160295" rel="noreferrer" ><span>Clique Aqui</span> para adquirir agora o E-book Sua Jornada na Meditação + Bônus</a>
+            </button>
         </GarantiaContainer>
     )
 }

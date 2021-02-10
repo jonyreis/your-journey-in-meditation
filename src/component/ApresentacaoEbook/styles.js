@@ -49,7 +49,9 @@ export const ApresentacaoEbookContainer = styled.div`
                 padding: 8px 32px;
                 outline: none;
                 cursor: pointer;
-                @media (max-width: 500px) {
+                a {
+                    color: #fff;
+                    text-decoration: none;
                 }
                 span {
                     text-decoration: underline;
