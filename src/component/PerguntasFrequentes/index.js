@@ -50,6 +50,9 @@ const PerguntasFrequentes = () => {
                     </li>
                 </ul>
             </div>
+            <button>
+                <a href="https://app.monetizze.com.br/checkout/PFH160295" rel="noreferrer" ><span>Clique Aqui</span> para adquirir agora o E-book Sua Jornada na Meditação + Bônus</a>
+            </button>
         </PerguntasFrequentesContainer>
     )
 }
