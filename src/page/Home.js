@@ -8,7 +8,7 @@ import Melhora from '../component/Melhora';
 import ApresentacaoEbook from '../component/ApresentacaoEbook'
 import Brinde from '../component/Brinde'
 import Garantia from '../component/Garantia'
-// import PerguntasFrequentes from '../component/PerguntasFrequentes'
+import PerguntasFrequentes from '../component/PerguntasFrequentes'
 import Footer from '../component/Footer'
 
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
             <ApresentacaoEbook />
             <Brinde />
             <Garantia />
-            {/* <PerguntasFrequentes /> */}
+            <PerguntasFrequentes />
             <Footer />
         </>
     )
