@@ -47,24 +47,35 @@ export const MidiaContainer = styled.div`
         background: linear-gradient(75.12deg, #671EAA 11.69%, rgba(169, 64, 238, 0.83) 106.88%);
     }
     .meditacao-numeros-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      max-width: 960px;
-      padding: 40px 0;
-      margin: 0 auto 40px;
-      div {
-          color: #fff;
-          text-align: center;
-          width: 380px;
-          h2 {
-              font-size: 40px;
-              font-weight: 700;
-          }
-          p {
-              font-size: 20px;
-              margin-top: 8px;
-          }
-      }
-  }
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 960px;
+        padding: 40px 0;
+        margin: 0 auto 40px;
+        @media (max-width: 760px) {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        div {
+            color: #fff;
+            text-align: center;
+            width: 380px;
+            @media (max-width: 760px) {
+                margin: 10px auto;
+            }
+            @media (max-width: 380px) {
+                max-width: 100%;
+                padding: 16px;
+            }
+            h2 {
+                font-size: 40px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 20px;
+                margin-top: 8px;
+            }
+        }
+    }
 `;

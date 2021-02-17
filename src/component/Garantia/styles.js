@@ -7,7 +7,7 @@ export const GarantiaContainer = styled.div`
     text-align: center;
 
     width: 100%;
-    padding: 16px 0 32px;
+    padding: 24px 0 80px;
     @media (max-width: 970px) {
         padding: 40px 20px;
     }
