@@ -18,7 +18,7 @@ const Intro = () => {
                 {/* <audio id="player" autoplay loop controls>
                     <source src={Audio} type="audio/mp3" />
                 </audio> */}
-                <h1>Inicie a sua jornada na meditação com apenas 5 minutos por dia e tenha uma vida de <span>Prosperidade, Abundância e Paz</span>.</h1>
+                <h1>Inicie a sua jornada na meditação com apenas 5 minutos por dia e tenha uma vida de <span>Prosperidade, Saúde e Paz</span>.</h1>
                 <div className="foto-beneficios">
                     <img src={MulherMeditando} alt="Mulher Meditando" />
                     <div className="beneficios">

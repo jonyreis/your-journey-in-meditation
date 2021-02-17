@@ -5,7 +5,7 @@ export const IntroContainer = styled.main`
     background: linear-gradient(75.12deg, #671EAA 11.69%, rgba(169, 64, 238, 0.83) 106.88%);
     width: 100%;
     min-height: 800px;
-    max-height: 108vh;
+    /* max-height: 108vh; */
     padding: 40px;
     @media (max-width: 930px) {
         min-height: 1060px;
