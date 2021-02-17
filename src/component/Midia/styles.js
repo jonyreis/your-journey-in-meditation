@@ -52,7 +52,7 @@ export const MidiaContainer = styled.div`
         align-items: flex-start;
         max-width: 960px;
         padding: 40px 0;
-        margin: 0 auto 40px;
+        margin: 0 auto;
         @media (max-width: 760px) {
             flex-direction: column;
             margin: 0 auto;

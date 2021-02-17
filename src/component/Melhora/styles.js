@@ -3,8 +3,10 @@ import styled from 'styled-components';
 export const MelhoraContainer = styled.div`
     max-width: 960px;
     margin: 0 auto;
+
+    padding: 80px 0;
     @media (max-width: 960px) {
-        padding: 0 20px;
+        padding: 80px 20px;
     }
     h2 {
         font-size: 36px;
@@ -20,7 +22,7 @@ export const MelhoraContainer = styled.div`
         align-items: center;
         justify-content: space-around;
         gap: 20px;
-        margin: 80px auto 120px;
+        margin: 0 auto;
         @media (max-width: 960px) {
             display: flex;
         }
