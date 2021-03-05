@@ -125,3 +125,31 @@ export const PoliticaContainer = styled.div`
     }
   }
 `;
+
+export const ObrigadoContainer = styled.div`
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  h1 {
+    margin: 40px 0;
+  }
+  div {
+    background-color: #eee;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+
+    max-width: 960px;
+    height: 540px;
+    margin: 40px auto 0;
+    padding: 32px;
+    img {
+      max-width: 100%;
+      align-self: center;
+    }
+    h3 {
+      align-self: center;
+    }
+  }
+`

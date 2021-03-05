@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Combo3d from '../../assets/CAPA_3D _COMBO.png';
+import Combo3d from '../../assets/CAPA_3D_COMBO.png';
 import Individual3d from '../../assets/CAPA_3D_INDIVIDUAL.png';
 import Buda2 from '../../assets/buda-2.svg';
 
