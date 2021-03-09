@@ -12,7 +12,7 @@ const Footer = () => {
             </div>
             <div className="links">
                 <Link to="/politica-privacidade">Política de Privacidade</Link>
-                <Link to="/contato">Contato</Link>
+                <Link to="/obrigado">Contato</Link>
             </div>
         </FooterContainer>
     )
