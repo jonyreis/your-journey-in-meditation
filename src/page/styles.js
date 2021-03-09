@@ -141,9 +141,12 @@ export const ObrigadoContainer = styled.div`
     grid-template-columns: 3fr 2fr;
 
     max-width: 960px;
-    height: 540px;
+    height: 480px;
     margin: 40px auto 0;
     padding: 32px;
+    @media (max-width: 700px) {
+      grid-template-columns: 1fr;
+    }
     img {
       max-width: 100%;
       align-self: center;

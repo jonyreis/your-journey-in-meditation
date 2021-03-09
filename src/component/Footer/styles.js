@@ -32,4 +32,8 @@ export const FooterContainer = styled.footer`
       text-decoration: underline;
     }
   }
+  #obrigado {
+    color: #111;
+    font-size: 6px;
+  }
 `;
