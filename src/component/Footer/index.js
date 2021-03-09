@@ -11,7 +11,6 @@ const Footer = () => {
                 <p>Todos os Direitos Reservados</p>
             </div>
             <div className="links">
-                <Link id="obrigado" to="/obrigado">Obrigado</Link>
                 <Link to="/politica-privacidade">Política de Privacidade</Link>
                 <Link to="/contato">Contato</Link>
             </div>
