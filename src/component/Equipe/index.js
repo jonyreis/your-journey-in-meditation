@@ -1,6 +1,6 @@
 import React from 'react'
 
-import MulherJovem from '../../assets/young-woman.jpg'
+import Buda1 from '../../assets/buda-1.svg';
 
 import { EquipeContainer } from './styles'
 
@@ -17,7 +17,10 @@ const Equipe = () => {
           física, mental e emocional com muito sucesso </p>
           <h3>(Equipe SUA JORNADA NA MEDITAÇÃO)</h3>
         </div>
-        <a href='https://br.freepik.com/fotos/fundo' _blank><img src={MulherJovem} alt="Mulher Meditando" /></a>
+        <div className="buda">
+          <img src={Buda1} alt="Buda" />
+        </div>
+
         <h3 id="h3-order">(Equipe SUA JORNADA NA MEDITAÇÃO)</h3>
       </div>
     </EquipeContainer>

@@ -30,8 +30,11 @@ export const EquipeContainer = styled.div`
         display: none;
       }
     }
+    .buda {
+      text-align: center;
+    }
     img {
-      max-height: 400px;
+      height: 240px;
       @media (max-width: 970px) {
         display: block;
 
