@@ -9,8 +9,8 @@ const instance = createInstance({
   disabled: process.env.NODE_ENV === 'development',
   urlBase: matomoUrl,
   siteId: 1,
-  trackerUrl: `${matomoUrl}/tracking.php`,
-  srcUrl: `${matomoUrl}/tracking.js`,
+  trackerUrl: `${matomoUrl}/api.php`,
+  srcUrl: `${matomoUrl}/api.js`,
   linkTracking: false,
   configurations: {
     setSecureCookie: true,
