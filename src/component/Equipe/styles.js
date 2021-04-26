@@ -7,7 +7,7 @@ export const EquipeContainer = styled.div`
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     gap: 20px;
     align-items: center;
 
@@ -31,11 +31,10 @@ export const EquipeContainer = styled.div`
       }
     }
     img {
-      max-width: 100%;
+      max-height: 400px;
       @media (max-width: 970px) {
         display: block;
 
-        max-width: 600px;
         margin: 0 auto;
       }
       @media (max-width: 660px) {
