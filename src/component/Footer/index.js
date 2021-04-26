@@ -1,9 +1,20 @@
 import React from 'react';
+import { useMatomo } from '@datapunt/matomo-tracker-react';
 import { Link } from 'react-router-dom';
 
 import { FooterContainer } from './styles';
 
 const Footer = () => {
+    const { trackEvent } = useMatomo();
+
+    function clickFooter(selected) {
+      trackEvent({
+        category: "footer",
+        action: "click-on-link",
+        name: selected,
+      });
+    }
+
     return (
         <FooterContainer>
             <div className="footer-left">
@@ -11,8 +22,8 @@ const Footer = () => {
                 <p>Todos os Direitos Reservados</p>
             </div>
             <div className="links">
-                <Link to="/politica-privacidade">Política de Privacidade</Link>
-                <Link to="/contato">Contato</Link>
+                <Link onClick={() => clickFooter('politica-privacidade')} to="/politica-privacidade">Política de Privacidade</Link>
+                <Link onClick={() => clickFooter('contato')} to="/contato">Contato</Link>
             </div>
         </FooterContainer>
     )

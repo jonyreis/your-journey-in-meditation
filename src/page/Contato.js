@@ -1,4 +1,5 @@
 import React from 'react'
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 import emailjs from 'emailjs-com'
 import apiKeys from '../apikeys'
@@ -8,6 +9,16 @@ import Footer from '../component/Footer'
 import { ContatoContainer } from './styles'
 
 const Contato = () => {
+    const { trackPageView } = useMatomo();
+
+    React.useEffect(() => {
+      trackPageView();
+
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      return () => {
+        window.scrollTo(0, 0);
+      }
+    }, [trackPageView]);
 
     function onSubmit(e) {
         console.log(e)
