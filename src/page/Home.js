@@ -19,10 +19,11 @@ const Home = () => {
   React.useEffect(() => {
     trackPageView();
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     return () => {
       window.scrollTo(0, 0);
     }
-  }, []);
+  }, [trackPageView]);
   return (
     <>
       <Intro />
