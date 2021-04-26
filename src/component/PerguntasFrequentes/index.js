@@ -1,10 +1,21 @@
 import React from 'react'
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 import Maca from '../../assets/maca.svg'
 
 import { PerguntasFrequentesContainer } from './styles'
 
 const PerguntasFrequentes = () => {
+    const { trackEvent } = useMatomo()
+
+    function clickBuy() {
+      trackEvent({
+        category: "perguntas-frequentes",
+        action: "click-on-button",
+        name: "button-buy",
+      });
+    }
+
     return (
         <PerguntasFrequentesContainer>
             <h1>Perguntas Frequentes</h1>
@@ -48,7 +59,7 @@ const PerguntasFrequentes = () => {
                     </div>
                 </li>
             </ul>
-            <button>
+            <button type="button" onClick={clickBuy}>
                 <a href="https://app.monetizze.com.br/checkout/PFH160295" rel="noreferrer" ><span>Clique Aqui</span> para adquirir agora o E-book Sua Jornada na Meditação + Bônus</a>
             </button>
         </PerguntasFrequentesContainer>
