@@ -1,4 +1,5 @@
 import React from 'react'
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 import Combo3d from '../../assets/CAPA_3D_COMBO.png';
 import Individual3d from '../../assets/CAPA_3D_INDIVIDUAL.png';
@@ -7,7 +8,17 @@ import Buda2 from '../../assets/buda-2.svg';
 
 import { ApresentacaoEbookContainer } from './styles'
 
+
 const ApresentacaoEbook = () => {
+    const { trackEvent } = useMatomo();
+
+    function clickAboutEvent() {
+      trackEvent({
+        category: "about",
+        action: "click-on-about",
+        name: "about-header",
+      });
+    }
     return (
         <ApresentacaoEbookContainer>
             <div className="container-1">
@@ -15,7 +26,7 @@ const ApresentacaoEbook = () => {
                     <div className="conteudo-1">
                         <h2>Tenha hoje seu ebook <span>Sua Jonanda na Meditação</span> e comece a experimentar os <span>benefícios da meditação</span> de uma forma simples e descomplicada</h2>
                         <img src={Combo3d} alt="Foto do Ebook" />
-                        <button type="button"><a href="https://app.monetizze.com.br/checkout/PFH160295"><span>Clique Aqui</span> e adquira o seu E-book!</a></button>
+                        <button type="button" onClick={clickAboutEvent}><a href="https://app.monetizze.com.br/checkout/PFH160295"><span>Clique Aqui</span> e adquira o seu E-book!</a></button>
                     </div>
                 </div>
             </div>
