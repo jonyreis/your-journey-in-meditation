@@ -12,11 +12,11 @@ import { ApresentacaoEbookContainer } from './styles'
 const ApresentacaoEbook = () => {
     const { trackEvent } = useMatomo();
 
-    function clickAboutEvent() {
+    function clickBuy() {
       trackEvent({
-        category: "about",
-        action: "click-on-about",
-        name: "about-header",
+        category: "apresentacao",
+        action: "click-on-button",
+        name: "button-buy",
       });
     }
     return (
@@ -26,7 +26,7 @@ const ApresentacaoEbook = () => {
                     <div className="conteudo-1">
                         <h2>Tenha hoje seu ebook <span>Sua Jonanda na Meditação</span> e comece a experimentar os <span>benefícios da meditação</span> de uma forma simples e descomplicada</h2>
                         <img src={Combo3d} alt="Foto do Ebook" />
-                        <button type="button" onClick={clickAboutEvent}><a href="https://app.monetizze.com.br/checkout/PFH160295"><span>Clique Aqui</span> e adquira o seu E-book!</a></button>
+                        <button type="button" onClick={clickBuy}><a href="https://app.monetizze.com.br/checkout/PFH160295"><span>Clique Aqui</span> e adquira o seu E-book!</a></button>
                     </div>
                 </div>
             </div>

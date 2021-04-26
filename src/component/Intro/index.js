@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from 'react';
+import { useMatomo } from '@datapunt/matomo-tracker-react'
 
 // import Audio from '../../assets/audio.mp3';
 
@@ -9,6 +10,15 @@ import Buda1 from '../../assets/buda-1.svg';
 import { IntroContainer } from './styles';
 
 const Intro = () => {
+    const { trackEvent } = useMatomo();
+
+    function clickBuy() {
+      trackEvent({
+        category: "intro",
+        action: "click-on-button",
+        name: "button-buy",
+      });
+    }
     return (
         <IntroContainer>
             <div className="container">
@@ -52,8 +62,8 @@ const Intro = () => {
                     </div>
                 </div>
                 <h3>Venha aprender a Meditar de forma simples e fácil!</h3>
-                <button type="button" className="button-large"><a href="https://app.monetizze.com.br/checkout/PFH160295"><span>Clique aqui</span> e adquira o seu E-book Sua Jornada na Meditação</a></button>
-                <button type="button" className="button-small"><a href="https://app.monetizze.com.br/checkout/PFH160295"><span>Clique aqui</span> e adquira o seu E-book</a></button>
+                <button onClick={clickBuy} type="button" className="button-large"><a href="https://app.monetizze.com.br/checkout/PFH160295"><span>Clique aqui</span> e adquira o seu E-book Sua Jornada na Meditação</a></button>
+                <button onClick={clickBuy} type="button" className="button-small"><a href="https://app.monetizze.com.br/checkout/PFH160295"><span>Clique aqui</span> e adquira o seu E-book</a></button>
             </div>
         </IntroContainer>
     )
