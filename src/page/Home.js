@@ -1,4 +1,5 @@
 import React from 'react';
+import { useMatomo } from '@datapunt/matomo-tracker-react';
 
 import Intro from '../component/Intro';
 import Infos1 from '../component/Infos1';
@@ -13,7 +14,11 @@ import PerguntasFrequentes from '../component/PerguntasFrequentes'
 import Footer from '../component/Footer'
 
 const Home = () => {
+  const { trackPageView } = useMatomo();
+
   React.useEffect(() => {
+    trackPageView();
+
     return () => {
       window.scrollTo(0, 0);
     }
