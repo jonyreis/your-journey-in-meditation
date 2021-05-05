@@ -14,7 +14,23 @@ import PerguntasFrequentes from '../component/PerguntasFrequentes'
 import Footer from '../component/Footer'
 
 const Home = () => {
-  const { trackPageView } = useMatomo();
+  const { trackPageView, trackEvent } = useMatomo()
+
+  window.onscroll = onPageScroll
+
+  function onPageScroll() {
+    if (document.documentElement.scrollTop >= 600 && document.documentElement.scrollTop <= 660) {
+      scrollEvent()
+    }
+  }
+
+  function scrollEvent() {
+    trackEvent({
+      category: "scroll",
+      action: "page-scroll",
+      name: "scroll-event",
+    });
+  }
 
   React.useEffect(() => {
     trackPageView();
@@ -23,7 +39,7 @@ const Home = () => {
     return () => {
       window.scrollTo(0, 0);
     }
-  }, [trackPageView]);
+  }, [trackPageView])
   return (
     <>
       <Intro />
